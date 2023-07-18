@@ -14,9 +14,14 @@ print(make_album('a','b',12))
 
 # 8-9
 unprint_messages = ['a','b','c']
+print_messages = []
 
 def show_messages(messages):
-    for message in messages:
+    while messages:
+        message = messages.pop()
         print(message)
+        print_messages.append(message)
         
-show_messages(unprint_messages)
+show_messages(unprint_messages[:])
+print(unprint_messages)
+print(print_messages)
