@@ -6,4 +6,4 @@ while 'pastrami' in sandwich_orders:
 while sandwich_orders:
     finished = sandwich_orders.pop()
     print(f"{finished} is finished")
-    finished_sandwiches.append(finished)
+    finished_sandwiches.append(finished) 
